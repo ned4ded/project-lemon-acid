@@ -1,7 +1,8 @@
-<form class="request" action="/" method="post">
+{% macro make(mods) %}
+<form class="request{{ ' ' + mods if mods }}" action="/" method="post">
   <div class="request__container">
-    <input class="request__input" type="email" name="email" required placeholder="Your Email">
+    <input size="10" class="request__input" type="email" name="email" required placeholder="Your Email">
     <button class="request__submit" type="submit">Subscribe</button>
   </div>
-
 </form>
+{% endmacro %}

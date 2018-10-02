@@ -1,3 +1,5 @@
+{% import "partials/input-request.njk" as request %}
+
 <div class="container section jumbotron">
   <div class="row section__content">
     <div class="col-12 jumbotron__content">
@@ -28,7 +30,7 @@
           <a href="{{ lightpaper.ref }}" class="link link--glass download__lightpaper">Litepaper</a>
         </li>
         <li class="download__item">
-          {% include "partials/input-request.njk" %}
+          {{ request.make('request--glass') }}
         </li>
       </ul>
     </div>

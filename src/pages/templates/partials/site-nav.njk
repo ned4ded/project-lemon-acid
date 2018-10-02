@@ -1,23 +1,23 @@
 {% set links = datasets.get('site-map') %}
 
-<div class="container-fluid header">
+<div class="container-fluid nav">
   <div class="row">
     <div class="col-12">
-      <header class="container">
+      <nav class="container">
         <div class="row">
           <div class="col-12">
 
-            <ul class="header__nav">
+            <ul class="nav__content">
               {% for link in links %}
-              <li class="header__item">
-                <a data-smooth-scroll class="header__link" href="{{ link.ref }}">{{ link.name }}</a>
+              <li class="nav__item">
+                <a data-smooth-scroll class="nav__link" href="{{ link.ref }}">{{ link.name }}</a>
               </li>
               {% endfor %}
             </ul>
 
           </div>
         </div>
-      </header>
+      </nav>
     </div>
   </div>
 </div>

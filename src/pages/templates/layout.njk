@@ -19,9 +19,13 @@
   <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
-  {% include "partials/header.njk" %}
+  {% include "partials/site-nav.njk" %}
 
   {% block content %} {% endblock %}
+
+  {% include "partials/footer.njk" %}
+
+  {% include "partials/site-nav.njk" %}
 
   <script type="text/javascript" src="js/main.js"></script>
 </body>
