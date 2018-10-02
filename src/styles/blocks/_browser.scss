@@ -1,5 +1,5 @@
 .browser {
-  width: 100%;
+  width: 475px;
 
   border-top: 1px solid rgba(0, 0, 32, 0.1);
   border-right: 1px solid rgba(0, 0, 32, 0.1);
@@ -10,9 +10,9 @@
 
   overflow: hidden;
 
-  @media (min-width: 1800px) {
-    width: 640px;
-  }
+  // @media (min-width: 1800px) {
+  //   width: 640px;
+  // }
 
   &__heading {
     display: flex;
@@ -82,8 +82,8 @@
   &__player {
     display: block;
 
-    width: 638px;
-    height: 440px;
+    width: 475px;
+    height: 350px;
     margin: 0 auto;
 
     border: none;

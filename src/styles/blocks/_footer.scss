@@ -4,9 +4,9 @@
 
   &__heading {
     color: white;
-    margin: 0px 0px 60px;
+    margin: 0px 0px 40px;
 
-    @include make-ff-nova(32px);
+    @include make-ff-nova(24px);
   }
 
   &__request {

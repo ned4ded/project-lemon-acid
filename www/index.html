@@ -27,7 +27,6 @@
       <nav class="container">
         <div class="row">
           <div class="col-12">
-
             <ul class="nav__content">
               
               <li class="nav__item">
@@ -51,7 +50,6 @@
               </li>
               
             </ul>
-
           </div>
         </div>
       </nav>
@@ -74,7 +72,10 @@
         <li class="download__item download__heading">
           
 
-          <img class="download__logotype" src="assets/imgs/logo-array-text.png" alt="Array.io Logotype" width="97" height="14">
+          <div class="download__logotype">
+            <img src="assets/imgs/logo-array-text.png" alt="Array.io Logotype" width="97" height="14">
+          </div>
+
 
           <p class="download__paragraph">
             New DApp environment
@@ -90,7 +91,7 @@
         <li class="download__item">
           
 
-          <a href="assets/lightpaper.pdf" class="link link--glass download__lightpaper">Litepaper</a>
+          <a href="assets/lightpaper.pdf" class="link link--glass download__lightpaper"><span class="link__icon link__icon--download"></span><span class="link__name">Litepaper</span></a>
         </li>
         <li class="download__item">
           
@@ -186,16 +187,16 @@
 
             <div id="client" class="features__item">
               <div class="features__caption">
-                <h3 class="features__heading">Client</h3>
+                <h3 class="features__heading">Array.IO Client</h3>
 
-                <p class="features__paragraph">The Array Platform allows developers to easily create DApps using a set of tools, which includes a software development kit (SDK), IDE plugins, Array.io Node all-in-one installation tool and the extensive documentation with tutorials and guidelines. Our SDK consists of a smart contract compiler and debugger, as well as a set of APIs for cross-chain connectivity and IPFS interaction. IDE plugins offer easy-to-use environment for DApp creation and deployment, while the Array.io Node installation tool enables you to instantly connect to our blockchain.
-                  Our client application has a user-friendly interface which gives access to the DApp marketplace and runs the installed DApps in an isolated environment. It has several components built in: local storage, IPFS, keychain, OrbitDB, logger, and  many more. These features are easily incorporated with the tools provided in the client SDK, which makes DApp development  accessible for anyone.</p>
+                <p class="features__paragraph">The Array Platform allows developers to easily create DApps using a set of tools, which includes a software development kit (SDK), IDE plugins, Array.IO Node all-in-one installation tool and the extensive documentation with tutorials and guidelines. Our SDK consists of a smart contract compiler and debugger, as well as a set of APIs for cross-chain connectivity and IPFS interaction. IDE plugins offer easy-to-use environment for DApp creation and deployment, while the Array.IO Node installation tool enables you to instantly connect to our blockchain.
+Our client application has a user-friendly interface which gives access to the DApp marketplace and runs the installed DApps in an isolated environment. It has several components built in: local storage, IPFS, keychain, OrbitDB, logger, and many more. These features are easily incorporated with the tools provided in the client SDK, which makes DApp development accessible for anyone.</p>
                 </div>
 
                 <div class="features__video">
                   <div class="browser">
                     <figure class="browser__heading">
-                      <span class="browser__heading-text">Array.io DApp environment</span>
+                      <span class="browser__heading-text">Array.IO DApp environment</span>
                     </figure>
 
                     <figure class="browser__site">
@@ -212,6 +213,257 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="container section">
+  <div class="row section__content">
+    <div class="col-12 ido">
+      <h2 class="ido__heading">IDO  (Initial Development Offering)</h2>
+      <p id="ido-less" data-visible="true" class="ido__paragraph ido__paragraph--align--center">A novel blockchain project requires not only the cutting-edge development ideas, but also the right attitude to fundraising. Initial Development Oﬀering, or IDO, is an innovative approach to attract investments, that is deemed fair for all parties involved. Although it has some features of the ICO (i.e. the distribution of tokens among the project backers in return for their ETH), the core ideas of IDO are quite different.</p>
+
+      <div data-visible="false" data-toggle-on='["ido-toggle-btn", "ido-less"]' id="ido-more" class="ido__more">
+        <div class="ido__more-wrapper">
+          <p class="ido__paragraph">
+            Unlike the ICOs that present a completely unrealistic roadmap and request to have all the resources in advance, IDO’s funding model is designed to be more adaptive to the realities of the software development process and catering to both the contributors’ desires and the project team.
+          </p>
+
+          <p class="ido__paragraph">
+            Our funding model introduces the concept of Token Generation Rounds (TGRs). Stages of a TGR are equally spaced time intervals that determine the split percentage of the minted IDO tokens according to a simple principle: “The later the stage, the larger the contributor’s share”. Price-wise it means that ‘early birds’ get less tokens for the same amount of contribution, which might make the investor wait for the last stage. However, the investors are motivated to get into the project early on since TGRs have a maxcap that could be hit at any time, closing the whole round.
+          </p>
+
+          <p class="ido__paragraph">
+            Unlike ICO, initial development tokens are refundable by unlocking the same amount of ETH which is then transferred back to the account that initiated the return. A particular part of the tokens can be exchanged back (burned) to retrieve the funds.
+          </p>
+
+          <p class="ido__paragraph">
+            Array.io is the first project to be funded through the IDO. We believe that at the moment it is the perfectly responsible way of fundraising, and in the future will become the common practice for attracting investments not only in blockchain projects but overall in software development.
+          </p>
+        </div>
+      </div>
+
+      <div class="ido__btn-container">
+        <a id="ido-toggle-btn" data-visible="true" data-toggle-off='["ido-less"]' data-toggle-on='["ido-more"]' href="#ido-more" class="ido__btn"><span class="ido__btn-text">learn more</span></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  
+
+<div class="container section">
+  <div class="row section__content">
+    <div class="col-12 instruction">
+      <h2 class="instruction__heading">Become a Witness</h2>
+      <p class="instruction__paragraph instruction__paragraph--align--center">Delegated Proof of Stake consensus algorithm requires validation of blocks by special nodes we call Delegates. DPoS is significantly faster and less prone to cartelization than Proof of Work algorithm. You have the opportunity to become an Array Witness and later a Delegate who validates new blocks.</p>
+
+      <div class="ido__btn-container">
+        <a data-modal-toggler="instruction-modal" href="#" class="ido__btn"><span class="ido__btn-text">learn how</span></a>
+      </div>
+
+      <div id="instruction-modal" class="instruction__guideline">
+        <button id="instruction-steps-prev" type="button" class="instruction__btn instruction__btn--left">previous step</button>
+
+        <div id="instruction-steps" class="swiper-container">
+
+          <ul class="swiper-wrapper instruction__steps">
+            <li class="swiper-slide">
+              <div class="step instruction__step">
+                <p class="step__paragraph">Install array-io node software</p>
+
+                <p class="step__paragraph">
+                  <a href="//github.com/arrayio/array-io-newton" class="link">
+                    <svg class="link__icon" xmlns="http://www.w3.org/2000/svg" width="32" height="31" viewBox="0 0 32.58 31.77">
+                      <path fill-rule="evenodd" d="M16.29,0a16.29,16.29,0,0,0-5.15,31.75c.81.15,1.11-.35,1.11-.79s0-1.41,0-2.77C7.7,29.18,6.74,26,6.74,26a4.31,4.31,0,0,0-1.81-2.38c-1.48-1,.11-1,.11-1a3.42,3.42,0,0,1,2.5,1.68,3.47,3.47,0,0,0,4.74,1.35,3.48,3.48,0,0,1,1-2.18C9.7,23.08,5.9,21.68,5.9,15.44a6.3,6.3,0,0,1,1.68-4.37,5.86,5.86,0,0,1,.16-4.31s1.37-.44,4.48,1.67a15.44,15.44,0,0,1,8.16,0c3.11-2.11,4.48-1.67,4.48-1.67A5.85,5.85,0,0,1,25,11.07a6.29,6.29,0,0,1,1.67,4.37c0,6.26-3.81,7.63-7.44,8a3.89,3.89,0,0,1,1.11,3c0,2.18,0,3.93,0,4.47s.29.94,1.12.78A16.29,16.29,0,0,0,16.29,0Z" data-name="Layer 1"></path>
+                    </svg>
+                    <span class="link__text">GitHub</span>
+                  </a>
+                </p>
+              </div>
+            </li>
+
+            <li class="swiper-slide">
+              <div class="step instruction__step">
+                <p class="step__paragraph">If you’re using  MacOS, run the following command to ensure that you have everything a Linux user has.</p>
+
+                
+
+                <pre class="snippet step__snippet"><code class="snippet__content"><span class="snippet__line">$ cmake -DLINUX_SIGACTION_SIGSEGV=DISABLE ..</span></code></pre>
+              </div>
+            </li>
+
+            <li class="swiper-slide">
+              <div class="step instruction__step">
+                <p class="step__paragraph">You should be able to spawn four threads. Alternatively, if you process with eight cores, you can make eight threads. Choose it according to your core/CPU environment, so that it works efficiently.</p>
+
+                
+
+                <pre class="snippet step__snippet"><code class="snippet__content"><span class="snippet__line">$ make -j4</span></code></pre>
+              </div>
+            </li>
+
+            <li class="swiper-slide">
+              <div class="step instruction__step">
+                <p class="step__paragraph">Connect to ‘newton.array.io’ and create a wallet with a chain ID. After the build you will get access the ‘programs’ directory which contains CliWallet and WitnessNode.</p>
+
+                
+
+                <pre class="snippet step__snippet"><code class="snippet__content"><span class="snippet__line">$ ./programs/cli_wallet/cli_wallet -s ws://newton.array.io:8090 --chain-id b6b83a593686087531ce581540564d20b2f75ff9879e9dd2eccfa9a79744b949</span></code></pre>
+              </div>
+            </li>
+
+            <li class="swiper-slide">
+              <div class="step instruction__step">
+                <p class="step__paragraph">You’re almost there! Create a password for your brand-new wallet and unlock it. You will know that you’ve done this when the line says ‘unlocked’ instead of ‘locked’.</p>
+
+                
+
+                <pre class="snippet step__snippet"><code class="snippet__content"><span class="snippet__line">locked &gt;&gt;&gt; set_password secret-password-here</span><span class="snippet__line">locked &gt;&gt;&gt; unlock secret-password-here</span><span class="snippet__line">unlocked &gt;&gt;&gt;</span></code></pre>
+              </div>
+            </li>
+
+            <li class="swiper-slide">
+              <div class="step instruction__step">
+                <p class="step__paragraph step__paragraph--margin--sm">Congrats! You have unlocked your wallet.</p>
+                <p class="step__paragraph step__paragraph--margin--sm">Now you can send us your account name and your public key, so that we could register your account.</p>
+                <p class="step__paragraph step__paragraph--margin--sm">To complete the registration of your account, you need to have some money in it.</p>
+                <p class="step__paragraph">We grant you <span class="step__emphasis">10000 RAY</span> to get you started</p>
+
+                <p class="step__paragraph">
+                  <a href="//github.com/arrayio/array-io-newton/issues/new?title=I%20want%20to%20become%20a%20witness" class="link">
+                    <svg class="link__icon" xmlns="http://www.w3.org/2000/svg" width="32" height="31" viewBox="0 0 32.58 31.77">
+                      <path fill-rule="evenodd" d="M16.29,0a16.29,16.29,0,0,0-5.15,31.75c.81.15,1.11-.35,1.11-.79s0-1.41,0-2.77C7.7,29.18,6.74,26,6.74,26a4.31,4.31,0,0,0-1.81-2.38c-1.48-1,.11-1,.11-1a3.42,3.42,0,0,1,2.5,1.68,3.47,3.47,0,0,0,4.74,1.35,3.48,3.48,0,0,1,1-2.18C9.7,23.08,5.9,21.68,5.9,15.44a6.3,6.3,0,0,1,1.68-4.37,5.86,5.86,0,0,1,.16-4.31s1.37-.44,4.48,1.67a15.44,15.44,0,0,1,8.16,0c3.11-2.11,4.48-1.67,4.48-1.67A5.85,5.85,0,0,1,25,11.07a6.29,6.29,0,0,1,1.67,4.37c0,6.26-3.81,7.63-7.44,8a3.89,3.89,0,0,1,1.11,3c0,2.18,0,3.93,0,4.47s.29.94,1.12.78A16.29,16.29,0,0,0,16.29,0Z" data-name="Layer 1"></path>
+                    </svg>
+                    <span class="link__text">Send request</span>
+                  </a>
+                </p>
+              </div>
+            </li>
+
+            <li class="swiper-slide">
+              <div class="step instruction__step">
+                <p class="step__paragraph">Generate a key pair</p>
+
+                <pre class="snippet step__snippet"><code class="snippet__content"><span class="snippet__line">&gt;&gt; suggest_brain_key</span></code></pre>
+
+                <p class="step__paragraph">You will get an output of this kind:</p>
+
+                
+
+                <pre class="snippet step__snippet"><code class="snippet__content"><span class="snippet__line">{</span><span class="snippet__line">  &quot;brain_priv_key&quot;: &quot;VOLET BUZZING BLASTID QUOITS RALPH WHIBA VAGUITY SONLIKE OUTGROW MISBORN CLOTBUR FRIZZER TONG DAND CARTER VERVAIN&quot;,</span><span class="snippet__line">  &quot;wif_priv_key&quot;: &quot;5KaGG9t31Ajmgkm1Y8ymHDGL4czn2Su2jbjKHoYy2fYkNSPjCM7&quot;,</span><span class="snippet__line">  &quot;pub_key&quot;: &quot;RAY5T5D5p3Cddo97tTA1d1iSKxHEMazthLtyUpiLpXu8rLYVyHxrH&quot;</span><span class="snippet__line">}</span></code></pre>
+              </div>
+            </li>
+
+            <li class="swiper-slide">
+              <div class="step instruction__step">
+                <p class="step__paragraph"><span class="step__emphasis">Memorize</span> the private key! It will be linked to the account that we create for you.</p>
+                <p class="step__paragraph"><span class="step__emphasis">Note: </span>The hash from the brain key gives you a private key. The hash of that hash produces a public key. If you lose a public key, you can get it from your private key. If you lose a private one, it can be accessed through the brain key.</p>
+              </div>
+            </li>
+
+            <li class="swiper-slide">
+              <div class="step instruction__step">
+                <p class="step__paragraph">Now you need to import your private key:</p>
+
+                <pre class="snippet step__snippet"><code class="snippet__content"><span class="snippet__line">&gt;&gt; import_key my-very-new-account &lt;your private here&gt; </span></code></pre>
+                </div>
+              </li>
+
+              <li class="swiper-slide">
+                <div class="step instruction__step">
+                  <p class="step__paragraph">To check the balance in all your accounts, you can do the following:</p>
+
+                  <pre class="snippet step__snippet"><code class="snippet__content"><span class="snippet__line">unlocked &gt;&gt;&gt; list_account_balances my-very-new-account, 1 </span></code></pre>
+                </div>
+              </li>
+
+              <li class="swiper-slide">
+                <div class="step instruction__step">
+                  <p class="step__paragraph">You’ve nailed it! With a functioning account, it is easy to become a witness. Here is how you can do that:</p>
+
+                  <pre class="snippet step__snippet"><code class="snippet__content"><span class="snippet__line">unlocked &gt;&gt;&gt; create_witness my-very-new-account &quot;https://flacon.array.io&quot; true </span></code></pre>
+                </div>
+              </li>
+
+              <li class="swiper-slide">
+                <div class="step instruction__step">
+                  <p class="step__paragraph">To get private keys for your witness, you should do</p>
+
+                  <pre class="snippet step__snippet"><code class="snippet__content"><span class="snippet__line">&gt;&gt; dump_private_keys </span></code></pre>
+                </div>
+              </li>
+
+              <li class="swiper-slide">
+                <div class="step instruction__step">
+                  <p class="step__paragraph">To see the history of all the actions, simply type:</p>
+
+                  <pre class="snippet step__snippet"><code class="snippet__content"><span class="snippet__line">unlocked &gt;&gt;&gt; get_account_history flacon, 10 </span></code></pre>
+                </div>
+              </li>
+
+              <li class="swiper-slide">
+                <div class="step instruction__step">
+                  <p class="step__paragraph">You can vote for your witness:</p>
+
+                  <pre class="snippet step__snippet"><code class="snippet__content"><span class="snippet__line">unlocked &gt;&gt;&gt; vote_for_witness my-very-new-account true </span></code></pre>
+                </div>
+              </li>
+
+              <li class="swiper-slide">
+                <div class="step instruction__step">
+                  <p class="step__paragraph">To complete the process, you need to type in the following line. It is supposed to present all the information on your account that you have in the witness node.</p>
+
+                  <pre class="snippet step__snippet"><code class="snippet__content"><span class="snippet__line">$ LC_ALL=C ./witness_node --data-dir=./newton --genesis-json=newton/main_genesis.json --rpc-endpoint=127.0.0.1:8090 --api-access=newton/api-access.json --witness-id &#39;&quot;1.5.22&quot;&#39; --private-key &#39;[&quot;RAY5xMr8JuFtDHCZ7wjKGUYksdsXREfcpxxcojjT371Qeo1F3MARL&quot;,&quot;5KbUiwxz2uh4tmcfaUKo1SVPrxg9MkxYJnqP2sYjchdTdSozZ6R&quot;]&#39; </span></code></pre>
+                </div>
+              </li>
+            </ul>
+
+          </div>
+
+          <button id="instruction-steps-next" type="button" class="instruction__btn instruction__btn--right">next step</button>
+
+        </div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="container section">
+  <div class="row section__content pros">
+    <div class="col-12">
+      <h2 class="pros__heading">
+        Everything you expect it to be
+      </h2>
+
+      <ul class="col-12 pros__list">
+        <li class="pros__item">
+          <h3 class="pros__item-name">Cross-blockchain operability</h3>
+
+          <p class="pros__item-paragraph">Array.IO uses an inter-blockchain communication protocol to allow synchronization between different blockchains</p>
+        </li>
+
+        <li class="pros__item">
+          <h3 class="pros__item-name">State machine proxy</h3>
+
+          <p class="pros__item-paragraph">SMPs provide a set of capabilities for safe and convenient communication with other blockchains</p>
+        </li>
+
+        <li class="pros__item">
+          <h3 class="pros__item-name">Large file support</h3>
+
+          <p class="pros__item-paragraph">In addition to IPFS, Array.IO supports local storage which can be used to store large amounts of data</p>
+        </li>
+
+        <li class="pros__item">
+          <h3 class="pros__item-name">High cryptographic strength</h3>
+
+          <p class="pros__item-paragraph">
+Array.IO keychain brings together different implementations of the Elliptic Curve cryptography to ensure that any key type is supported and managed in a secure way</p>
+        </li>
+      </ul>
     </div>
   </div>
 </div>
@@ -294,7 +546,6 @@
       <nav class="container">
         <div class="row">
           <div class="col-12">
-
             <ul class="nav__content">
               
               <li class="nav__item">
@@ -318,7 +569,6 @@
               </li>
               
             </ul>
-
           </div>
         </div>
       </nav>

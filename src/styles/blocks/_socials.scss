@@ -25,7 +25,7 @@
     color: white;
     transition: color .3s ease-in;
 
-    @include make-ff-nova(16px);
+    @include make-ff-nova(18px);
 
     &:hover {
       transition: color .05s ease-in;

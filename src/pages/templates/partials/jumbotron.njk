@@ -11,7 +11,10 @@
         <li class="download__item download__heading">
           {% set logo = assets['logotype-download'] %}
 
-          <img class="download__logotype" src="{{ logo.ref }}" alt="{{ logo.alt }}" width="{{ logo.width }}" height="{{ logo.height }}">
+          <div class="download__logotype">
+            <img src="{{ logo.ref }}" alt="{{ logo.alt }}" width="{{ logo.width }}" height="{{ logo.height }}">
+          </div>
+
 
           <p class="download__paragraph">
             New DApp environment
@@ -27,7 +30,7 @@
         <li class="download__item">
           {% set lightpaper = assets['lightpaper'] %}
 
-          <a href="{{ lightpaper.ref }}" class="link link--glass download__lightpaper">Litepaper</a>
+          <a href="{{ lightpaper.ref }}" class="link link--glass download__lightpaper"><span class="link__icon link__icon--download"></span><span class="link__name">Litepaper</span></a>
         </li>
         <li class="download__item">
           {{ request.make('request--glass') }}
