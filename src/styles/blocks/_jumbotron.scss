@@ -1,0 +1,67 @@
+.jumbotron {
+
+  & .section__content {
+    padding-top: 200px;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    justify-content: center;
+  }
+
+  &__logotype {
+    margin: 0px 35px;
+  }
+
+  &__download {
+    margin: 0px 35px;
+  }
+
+  &__slogan {
+    display: inline-flex;
+    justify-content: center;
+
+    margin-top: 100px;
+    margin-bottom: 0;
+    padding: 0;
+
+    list-style: none;
+
+    text-align: center;
+    letter-spacing: -1.8px;
+
+    color: white;
+
+    line-height: 1.3;
+
+    @include make-ff-nova(36px);
+
+    & li {
+      position: relative;
+
+      padding: 0px 28px;
+
+      &:after {
+        position: absolute;
+        top: 50%;
+        right: 0;
+
+        width: 6px;
+        height: 6px;
+
+        content: '';
+        transform: translate(50%, -50%);
+
+        border-radius: 100%;
+        background-color: white;
+      }
+
+      &:last-child:after {
+        display: none;
+      }
+    }
+  }
+
+}

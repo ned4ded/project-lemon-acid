@@ -1,0 +1,1 @@
+{"version":3,"sources":["terminal.js"],"names":["document","addEventListener"],"mappings":"aAAAA,SAASC,iBAAiB,mBAAqB,cAE3C","file":"main.js","sourcesContent":["document.addEventListener('DOMContentLoaded', (() => {\n\n}), false);\n"]}

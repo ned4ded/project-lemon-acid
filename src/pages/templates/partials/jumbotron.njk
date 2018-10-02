@@ -1,0 +1,44 @@
+<div class="container section jumbotron">
+  <div class="row section__content">
+    <div class="col-12 jumbotron__content">
+      {% set logo = assets['logotype-jumbotron'] %}
+
+      <img class="jumbotron__logotype" src="{{ logo.ref }}" alt="{{ logo.alt }}" width="{{ logo.width }}" height="{{ logo.height }}">
+
+      <ul class="jumbotron__download download">
+        <li class="download__item download__heading">
+          {% set logo = assets['logotype-download'] %}
+
+          <img class="download__logotype" src="{{ logo.ref }}" alt="{{ logo.alt }}" width="{{ logo.width }}" height="{{ logo.height }}">
+
+          <p class="download__paragraph">
+            New DApp environment
+          </p>
+        </li>
+
+        <li class="download__item">
+          <p class="download__paragraph download__paragraph--release">
+            open-source platform release Q4 2018
+          </p>
+        </li>
+
+        <li class="download__item">
+          {% set lightpaper = assets['lightpaper'] %}
+
+          <a href="{{ lightpaper.ref }}" class="link link--glass download__lightpaper">Litepaper</a>
+        </li>
+        <li class="download__item">
+          {% include "partials/input-request.njk" %}
+        </li>
+      </ul>
+    </div>
+
+    <ul class="col-12 jumbotron__slogan">
+      <li>Simple</li>
+
+      <li>Fast</li>
+
+      <li>Decentralized</li>
+    </ul>
+  </div>
+</div>

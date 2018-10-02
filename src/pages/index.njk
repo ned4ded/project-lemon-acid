@@ -1,0 +1,9 @@
+{% extends "layout.njk" %}
+
+{% set assets = datasets.get('assets') %}
+
+{% block content %}
+  {% include "partials/jumbotron.njk" %}
+
+  {% include "partials/about.njk" %}
+{% endblock %}
