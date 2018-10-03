@@ -164,63 +164,63 @@ document.addEventListener('DOMContentLoaded', (() => {
       this.busy = false;
     }
   }
-
-  class ModalWindow extends Animation {
-    constructor(element, lining, initState = 'closed', openTime = 500) {
-      super(element, initState, openTime, false);
-
-      this.lining = lining;
-      this.notify();
-    }
-
-    notify() {
-      this.el.dataset.modalState = this.state;
-      this.lining.dataset.modalState = this.state;
-    }
-
-    listener = (ev) => {
-      ev.preventDefault();
-
-      return;
-    }
-
-    open(cb = () => {}) {
-      if(this.isState('open') || this.isBusy()) return false;
-
-      window.addEventListener('touchmove', this.listener);
-      window.addEventListener('wheel', this.listener);
-      this.occupy();
-      this.setState('opening');
-
-      setTimeout(() => {
-        this.setState('open');
-        this.vacate();
-
-        return cb();
-      }, this.openTime);
-
-      return this;
-    }
-
-    close(cb = () => {}) {
-      if(this.isState('closed') || this.isBusy()) return false;
-
-      this.occupy();
-      this.setState('closing');
-
-      setTimeout(() => {
-        this.setState('closed');
-        this.vacate();
-
-        window.removeEventListener('touchmove', this.listener);
-        window.removeEventListener('wheel', this.listener);
-
-        return cb();
-      }, this.openTime);
-
-      return this;
-    }
-  }
+  //
+  // class ModalWindow extends Animation {
+  //   constructor(element, lining, initState = 'closed', openTime = 500) {
+  //     super(element, initState, openTime, false);
+  //
+  //     this.lining = lining;
+  //     this.notify();
+  //   }
+  //
+  //   notify() {
+  //     this.el.dataset.modalState = this.state;
+  //     this.lining.dataset.modalState = this.state;
+  //   }
+  //
+  //   listener = (ev) => {
+  //     ev.preventDefault();
+  //
+  //     return;
+  //   }
+  //
+  //   open(cb = () => {}) {
+  //     if(this.isState('open') || this.isBusy()) return false;
+  //
+  //     window.addEventListener('touchmove', this.listener);
+  //     window.addEventListener('wheel', this.listener);
+  //     this.occupy();
+  //     this.setState('opening');
+  //
+  //     setTimeout(() => {
+  //       this.setState('open');
+  //       this.vacate();
+  //
+  //       return cb();
+  //     }, this.openTime);
+  //
+  //     return this;
+  //   }
+  //
+  //   close(cb = () => {}) {
+  //     if(this.isState('closed') || this.isBusy()) return false;
+  //
+  //     this.occupy();
+  //     this.setState('closing');
+  //
+  //     setTimeout(() => {
+  //       this.setState('closed');
+  //       this.vacate();
+  //
+  //       window.removeEventListener('touchmove', this.listener);
+  //       window.removeEventListener('wheel', this.listener);
+  //
+  //       return cb();
+  //     }, this.openTime);
+  //
+  //     return this;
+  //   }
+  // }
 
   class SmoothScroll {
     constructor(link) {
@@ -320,61 +320,61 @@ document.addEventListener('DOMContentLoaded', (() => {
     slogan.classList.remove('jumbotron__slogan--hidden');
   };
 
-  const instruction = document.getElementById('instruction-steps');
-  const prev = document.getElementById('instruction-steps-prev');
-  const next = document.getElementById('instruction-steps-next');
+  // const instruction = document.getElementById('instruction-steps');
+  // const prev = document.getElementById('instruction-steps-prev');
+  // const next = document.getElementById('instruction-steps-next');
+  //
+  // const options = {
+  //   simulateTouch: false,
+  //   observer: true,
+  //   observeParents: true,
+  //   navigation: {
+  //     prevEl: prev,
+  //     nextEl: next,
+  //   }
+  // }
 
-  const options = {
-    simulateTouch: false,
-    observer: true,
-    observeParents: true,
-    navigation: {
-      prevEl: prev,
-      nextEl: next,
-    }
-  }
+  // const swiper = (() => {
+  //   return instruction ? new Swiper(instruction, options) : null;
+  // })();
 
-  const swiper = (() => {
-    return instruction ? new Swiper(instruction, options) : null;
-  })();
+  // const lining = document.getElementById('lining');
 
-  const lining = document.getElementById('lining');
+  // const modals = Array.from( document.querySelectorAll('[data-modal-toggler]') ).map(el => {
+  //   const id = el.dataset.modalToggler;
+  //   const modal = document.getElementById(id);
+  //
+  //   return modal ? { toggler: el, modal: new ModalWindow(modal, lining) } : null;
+  // });
 
-  const modals = Array.from( document.querySelectorAll('[data-modal-toggler]') ).map(el => {
-    const id = el.dataset.modalToggler;
-    const modal = document.getElementById(id);
-
-    return modal ? { toggler: el, modal: new ModalWindow(modal, lining) } : null;
-  });
-
-  modals.forEach(({ toggler, modal }) => {
-    const listener = (ev) => {
-      ev.preventDefault();
-
-      toggler.removeEventListener('click', listener);
-
-      modal.open(() => {
-        lining.addEventListener('click', liningListener);
-
-        return;
-      });
-
-    }
-
-    const liningListener = (ev) => {
-      ev.preventDefault();
-
-      lining.removeEventListener('click', liningListener);
-
-      modal.close(() => {
-        toggler.addEventListener('click', listener);
-
-        return;
-      })
-    }
-
-    toggler.addEventListener('click', listener);
-  });
+  // modals.forEach(({ toggler, modal }) => {
+  //   const listener = (ev) => {
+  //     ev.preventDefault();
+  //
+  //     toggler.removeEventListener('click', listener);
+  //
+  //     modal.open(() => {
+  //       lining.addEventListener('click', liningListener);
+  //
+  //       return;
+  //     });
+  //
+  //   }
+  //
+  //   const liningListener = (ev) => {
+  //     ev.preventDefault();
+  //
+  //     lining.removeEventListener('click', liningListener);
+  //
+  //     modal.close(() => {
+  //       toggler.addEventListener('click', listener);
+  //
+  //       return;
+  //     })
+  //   }
+  //
+  //   toggler.addEventListener('click', listener);
+  // });
 
   if(!screen.smallerThan('sm')) {
     const icons = Array.from( document.querySelectorAll('[data-levitate]') ).reduce((acc, cur) => {
