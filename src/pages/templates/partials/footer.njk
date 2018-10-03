@@ -1,7 +1,7 @@
 {% import "partials/social-icons.njk" as icons %}
 {% import "partials/input-request.njk" as request %}
 
-<div class="container-fluid footer section">
+<div id="section-contact" class="container-fluid footer section">
   <div class="row">
     <div class="col-12">
       <div class="container">
@@ -16,20 +16,22 @@
             <ul class="socials footer__socials">
               {% for item in socials %}
               <li>
-                <a class="socials__link" href="{{ item.ref }}"><span class="socials__icon">{{ icons.make(item.name) }}</span><span class="socials__name">{{ item.name }}</span></a>
+                <a class="socials__link" href="{{ item.ref }}"><span class="socials__icon">{{ icons.make(item.icon) }}</span><span class="socials__name">{{ item.name }}</span></a>
               </lu>
               {% endfor %}
             </ul>
 
           </div>
 
-          <div class="col-12 col-md-7">
+          <div class="col-12 col-md-7 footer__tuned">
             <h2 class="footer__heading">
               Stay tuned
             </h2>
 
-            <div class="footer__request">
-              {{ request.make('request--default') }}
+            <div class="footer__subscription">
+              <div class="footer__request">
+                {{ request.make('request--default') }}
+              </div>
             </div>
           </div>
         </footer>

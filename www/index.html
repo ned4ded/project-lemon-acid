@@ -11,6 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap-grid.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -30,23 +31,23 @@
             <ul class="nav__content">
               
               <li class="nav__item">
-                <a data-smooth-scroll class="nav__link" href="#about-section">About</a>
+                <a data-smooth-scroll class="nav__link" href="#section-about">About</a>
               </li>
               
               <li class="nav__item">
-                <a data-smooth-scroll class="nav__link" href="#features-section">Features</a>
+                <a data-smooth-scroll class="nav__link" href="#section-features">Features</a>
               </li>
               
               <li class="nav__item">
-                <a data-smooth-scroll class="nav__link" href="#ido-section">IDO</a>
+                <a data-smooth-scroll class="nav__link" href="#section-ido">IDO</a>
               </li>
               
               <li class="nav__item">
-                <a data-smooth-scroll class="nav__link" href="#witness-section">Witness</a>
+                <a data-smooth-scroll class="nav__link" href="#section-witness">Witness</a>
               </li>
               
               <li class="nav__item">
-                <a data-smooth-scroll class="nav__link" href="#contact-section">Contact</a>
+                <a data-smooth-scroll class="nav__link" href="#section-contact">Contact</a>
               </li>
               
             </ul>
@@ -66,20 +67,20 @@
     <div class="col-12 jumbotron__content">
       
 
-      <img class="jumbotron__logotype" src="assets/imgs/logo-array-dots.png" alt="Array.io Logotype" width="251" height="279">
+      <div data-animation-process-name="cube" data-animation-process="open" class="jumbotron__cube cube">
+        <span class="cube__part cube__part--top"></span>
+        <img class="jumbotron__logotype cube__logotype" src="assets/imgs/logo-array-dots.png" alt="Array.io Logotype" width="251" height="279">
+        <span class="cube__part cube__part--bottom"></span>
+      </div>
+
 
       <ul class="jumbotron__download download">
         <li class="download__item download__heading">
           
 
           <div class="download__logotype">
-            <img src="assets/imgs/logo-array-text.png" alt="Array.io Logotype" width="97" height="14">
+            <img src="assets/imgs/logo-array-text.png" alt="Array.io Logotype" width="148" height="21">
           </div>
-
-
-          <p class="download__paragraph">
-            New DApp environment
-          </p>
         </li>
 
         <li class="download__item">
@@ -106,18 +107,23 @@
       </ul>
     </div>
 
-    <ul class="col-12 jumbotron__slogan">
-      <li>Simple</li>
+    <div class="col-12 jumbotron__slogan">
+      <p class="jumbotron__slogan-paragraph">Superior environment for building interconnected DApps</p>
 
-      <li>Fast</li>
+      <ul class="jumbotron__slogan-list">
+        <li>Simple</li>
 
-      <li>Decentralized</li>
-    </ul>
+        <li>Fast</li>
+
+        <li>Decentralized</li>
+      </ul>
+    </div>
+
   </div>
 </div>
 
 
-  <div class="container section about">
+  <div id="section-about" class="container section about">
   <div class="row">
     <div class="col-12 section__content">
       <ul class="about__list">
@@ -142,23 +148,23 @@
 </div>
 
 
-  <div class="container-fluid section features">
+  <div id="section-features" class="container-fluid section features">
   <div class="row">
     <div class="col-12">
       <div class="container">
         <div class="row section__content">
           <div class="col-12">
             <nav class="features__nav">
-              <a href="#core" class="features__link">Array.IO Core</a>
-              <a href="#vm" class="features__link">Array Virtual Machine</a>
-              <a href="#keychain" class="features__link">Keychain</a>
-              <a href="#client" class="features__link">Array.IO Client</a>
+              <a data-smooth-scroll href="#core" class="features__link">Array.IO Core</a>
+              <a data-smooth-scroll href="#vm" class="features__link">Array Virtual Machine</a>
+              <a data-smooth-scroll href="#keychain" class="features__link">Keychain</a>
+              <a data-smooth-scroll href="#client" class="features__link">Array.IO Client</a>
             </nav>
 
             <div id="core" class="features__item">
-              <span class="features__icon features__icon--core"></span>
+              <span data-levitate class="features__icon features__icon--core"></span>
 
-              <div class="features__caption">
+              <div class="features__caption features__caption--p--right">
                 <h3 class="features__heading">Array.IO Core</h3>
 
                 <p class="features__paragraph">The Core is the undercurrent power that runs deep in any system and defines its capabilities. We’ve made speed and convenience our priorities. That is why our blockchain is based on DPoS (Delegated Proof-of-Stake) consensus algorithm that allows faster transactions and has the innate support for smart contracts written in Solidity. This way our blockchain confirms transactions faster, hence it executes contracts faster, as well as it brings blockchain technology closer to the real world use.</p>
@@ -169,23 +175,23 @@
               <div class="features__caption">
                 <h3 class="features__heading features__heading--align--right">Array Virtual Machine</h3>
 
-                <p class="features__paragraph">As you read these lines, all the existing platforms are trying to fight the issue of slow transactions. But the blockchain world doesn’t have ready decisions yet because it falls into the trap of using the Etherium Virtual Machine (EVM). To fight this problem, we’ve built our own virtual machine (Array Virtual Machine or AVM) that performs actions faster (e.g. it executes smart contracts 25% faster than Python-based VMs).</p>
+                <p class="features__paragraph features__caption--p--left">As you read these lines, all the existing platforms are trying to fight the issue of slow transactions. But the blockchain world doesn’t have ready decisions yet because it falls into the trap of using the Etherium Virtual Machine (EVM). To fight this problem, we’ve built our own virtual machine (Array Virtual Machine or AVM) that performs actions faster (e.g. it executes smart contracts 25% faster than Python-based VMs).</p>
               </div>
 
-              <span class="features__icon features__icon--vm"></span>
+              <span data-levitate class="features__icon features__icon--vm"></span>
             </div>
 
             <div id="keychain" class="features__item">
-              <span class="features__icon features__icon--keys"></span>
+              <span data-levitate class="features__icon features__icon--keys"></span>
 
-              <div class="features__caption">
+              <div class="features__caption features__caption--p--right">
                 <h3 class="features__heading">Keychain</h3>
 
                 <p class="features__paragraph">Another factor that we value the most is security. We protect our users by providing them with two kinds of keys - public and private ones. To make our platform a safe and pleasant experience, we’ve created a shield called the Keychain. Keychain is a system for creating and managing private keys, signing transactions, and encrypting the data. It supports various formats of private keys (e.g. ECDSA and RSA) and can be used by a node, a Client or a DApp's NodeJS server to sign transactions. It can also be used by a Web application to keep the keys in an isolated environment.</p>
               </div>
             </div>
 
-            <div id="client" class="features__item">
+            <div id="client" class="features__item features__item--align--center">
               <div class="features__caption">
                 <h3 class="features__heading">Array.IO Client</h3>
 
@@ -218,7 +224,7 @@ Our client application has a user-friendly interface which gives access to the D
 </div>
 
 
-  <div class="container section">
+  <div id="section-ido" class="container section">
   <div class="row section__content">
     <div class="col-12 ido">
       <h2 class="ido__heading">IDO  (Initial Development Offering)</h2>
@@ -254,7 +260,7 @@ Our client application has a user-friendly interface which gives access to the D
 
   
 
-<div class="container section">
+<div id="section-witness" class="container section">
   <div class="row section__content">
     <div class="col-12 instruction">
       <h2 class="instruction__heading">Become a Witness</h2>
@@ -275,7 +281,7 @@ Our client application has a user-friendly interface which gives access to the D
                 <p class="step__paragraph">Install array-io node software</p>
 
                 <p class="step__paragraph">
-                  <a href="//github.com/arrayio/array-io-newton" class="link">
+                  <a href="//github.com/arrayio/array-io-newton" class="link link--default">
                     <svg class="link__icon" xmlns="http://www.w3.org/2000/svg" width="32" height="31" viewBox="0 0 32.58 31.77">
                       <path fill-rule="evenodd" d="M16.29,0a16.29,16.29,0,0,0-5.15,31.75c.81.15,1.11-.35,1.11-.79s0-1.41,0-2.77C7.7,29.18,6.74,26,6.74,26a4.31,4.31,0,0,0-1.81-2.38c-1.48-1,.11-1,.11-1a3.42,3.42,0,0,1,2.5,1.68,3.47,3.47,0,0,0,4.74,1.35,3.48,3.48,0,0,1,1-2.18C9.7,23.08,5.9,21.68,5.9,15.44a6.3,6.3,0,0,1,1.68-4.37,5.86,5.86,0,0,1,.16-4.31s1.37-.44,4.48,1.67a15.44,15.44,0,0,1,8.16,0c3.11-2.11,4.48-1.67,4.48-1.67A5.85,5.85,0,0,1,25,11.07a6.29,6.29,0,0,1,1.67,4.37c0,6.26-3.81,7.63-7.44,8a3.89,3.89,0,0,1,1.11,3c0,2.18,0,3.93,0,4.47s.29.94,1.12.78A16.29,16.29,0,0,0,16.29,0Z" data-name="Layer 1"></path>
                     </svg>
@@ -333,7 +339,7 @@ Our client application has a user-friendly interface which gives access to the D
                 <p class="step__paragraph">We grant you <span class="step__emphasis">10000 RAY</span> to get you started</p>
 
                 <p class="step__paragraph">
-                  <a href="//github.com/arrayio/array-io-newton/issues/new?title=I%20want%20to%20become%20a%20witness" class="link">
+                  <a href="//github.com/arrayio/array-io-newton/issues/new?title=I%20want%20to%20become%20a%20witness" class="link link--default">
                     <svg class="link__icon" xmlns="http://www.w3.org/2000/svg" width="32" height="31" viewBox="0 0 32.58 31.77">
                       <path fill-rule="evenodd" d="M16.29,0a16.29,16.29,0,0,0-5.15,31.75c.81.15,1.11-.35,1.11-.79s0-1.41,0-2.77C7.7,29.18,6.74,26,6.74,26a4.31,4.31,0,0,0-1.81-2.38c-1.48-1,.11-1,.11-1a3.42,3.42,0,0,1,2.5,1.68,3.47,3.47,0,0,0,4.74,1.35,3.48,3.48,0,0,1,1-2.18C9.7,23.08,5.9,21.68,5.9,15.44a6.3,6.3,0,0,1,1.68-4.37,5.86,5.86,0,0,1,.16-4.31s1.37-.44,4.48,1.67a15.44,15.44,0,0,1,8.16,0c3.11-2.11,4.48-1.67,4.48-1.67A5.85,5.85,0,0,1,25,11.07a6.29,6.29,0,0,1,1.67,4.37c0,6.26-3.81,7.63-7.44,8a3.89,3.89,0,0,1,1.11,3c0,2.18,0,3.93,0,4.47s.29.94,1.12.78A16.29,16.29,0,0,0,16.29,0Z" data-name="Layer 1"></path>
                     </svg>
@@ -473,7 +479,7 @@ Array.IO keychain brings together different implementations of the Elliptic Curv
   
 
 
-<div class="container-fluid footer section">
+<div id="section-contact" class="container-fluid footer section">
   <div class="row">
     <div class="col-12">
       <div class="container">
@@ -511,17 +517,22 @@ Array.IO keychain brings together different implementations of the Elliptic Curv
                 <a class="socials__link" href="//stackoverflow.com/users/10429540/array-io"><span class="socials__icon"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"><path d="M15 21h-10v-2h10v2zm6-11.665l-1.621-9.335-1.993.346 1.62 9.335 1.994-.346zm-5.964 6.937l-9.746-.975-.186 2.016 9.755.879.177-1.92zm.538-2.587l-9.276-2.608-.526 1.954 9.306 2.5.496-1.846zm1.204-2.413l-8.297-4.864-1.029 1.743 8.298 4.865 1.028-1.744zm1.866-1.467l-5.339-7.829-1.672 1.14 5.339 7.829 1.672-1.14zm-2.644 4.195v8h-12v-8h-2v10h16v-10h-2z"/></svg></span><span class="socials__name">stackoverflow</span></a>
               </lu>
               
+              <li>
+                <a class="socials__link" href="mailto:info@array.io"><span class="socials__icon"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"><path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"/></svg></span><span class="socials__name">info@array.io</span></a>
+              </lu>
+              
             </ul>
 
           </div>
 
-          <div class="col-12 col-md-7">
+          <div class="col-12 col-md-7 footer__tuned">
             <h2 class="footer__heading">
               Stay tuned
             </h2>
 
-            <div class="footer__request">
-              
+            <div class="footer__subscription">
+              <div class="footer__request">
+                
 <form class="request request--default" action="/" method="post">
   <div class="request__container">
     <input size="10" class="request__input" type="email" name="email" required placeholder="Your Email">
@@ -529,6 +540,7 @@ Array.IO keychain brings together different implementations of the Elliptic Curv
   </div>
 </form>
 
+              </div>
             </div>
           </div>
         </footer>
@@ -549,23 +561,23 @@ Array.IO keychain brings together different implementations of the Elliptic Curv
             <ul class="nav__content">
               
               <li class="nav__item">
-                <a data-smooth-scroll class="nav__link" href="#about-section">About</a>
+                <a data-smooth-scroll class="nav__link" href="#section-about">About</a>
               </li>
               
               <li class="nav__item">
-                <a data-smooth-scroll class="nav__link" href="#features-section">Features</a>
+                <a data-smooth-scroll class="nav__link" href="#section-features">Features</a>
               </li>
               
               <li class="nav__item">
-                <a data-smooth-scroll class="nav__link" href="#ido-section">IDO</a>
+                <a data-smooth-scroll class="nav__link" href="#section-ido">IDO</a>
               </li>
               
               <li class="nav__item">
-                <a data-smooth-scroll class="nav__link" href="#witness-section">Witness</a>
+                <a data-smooth-scroll class="nav__link" href="#section-witness">Witness</a>
               </li>
               
               <li class="nav__item">
-                <a data-smooth-scroll class="nav__link" href="#contact-section">Contact</a>
+                <a data-smooth-scroll class="nav__link" href="#section-contact">Contact</a>
               </li>
               
             </ul>
@@ -577,6 +589,10 @@ Array.IO keychain brings together different implementations of the Elliptic Curv
 </div>
 
 
+  <div id="lining" class="lining"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
 </body>
 

@@ -31,6 +31,11 @@
       transition: color .05s ease-in;
       color: rgba($color-contrast, .9);
     }
+
+    &:active {
+      transition: color .05s ease-in;
+      color: rgba($color-light, .9);
+    }
   }
 
   &__text {
@@ -40,20 +45,25 @@
   }
 
   &__icon {
-    display: inline-block;
+    display: inline-flex;
     margin: 0 10px 0 0;
+    align-items: center;
 
     & svg {
       height: 18px;
       width: 18px;
       fill: white;
       transition: fill .3s ease-in;
-
     }
   }
 
   &__link:hover svg {
     fill: rgba($color-contrast, .9);
+    transition: fill .05s ease-in;
+  }
+
+  &__link:active svg {
+    fill: rgba($color-light, .9);
     transition: fill .05s ease-in;
   }
 }

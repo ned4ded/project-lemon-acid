@@ -1,5 +1,5 @@
 .ido {
-  min-height: 160px;
+  min-height: 206px;
 
   @keyframes more-block-animation-forward {
     0% {
@@ -31,8 +31,8 @@
     display: none;
     border-radius: 7px;
     max-width: 955px;
-    margin: 0 auto;
-    background-image: linear-gradient(to top, #031026, #020b1a);
+    margin: 35px auto 0;
+    background-image: linear-gradient(to right, #1e395c, #1e395c);
     box-shadow: 0px 0px 5px 6px rgba(94, 166, 251, 0.4);
     position: relative;
 
@@ -54,11 +54,11 @@
 
     &:before {
       display: block;
-      width: 38px;
-      height: 21px;
+      width: 42px;
+      height: 36px;
       content: '';
       position: absolute;
-      top: 1px;
+      top: 4px;
       left: 50%;
       transform: translate(-50%, -100%);
       background-image: url("../assets/imgs/ido-icon-more.png");
@@ -120,13 +120,13 @@
 
     &:active {
       box-shadow: 0px 0px 30px 25px rgba(29, 39, 56, 0), 0px 0px 15px 10px transparent;
-      transition: box-shadow .1s ease-in;
+      transition: box-shadow .02s ease-in;
 
       &:before {
         box-shadow: inset 0px 2px 0.79px 0.21px rgba(0, 0, 0, 0.24);
 
         opacity: 0;
-        transition: all .1s ease-in;
+        transition: all .02s ease-in;
       }
     }
 
@@ -152,7 +152,7 @@
     }
 
     &:active &-text {
-      transition: all .1s ease-in;
+      transition: all .02s ease-in;
       background-color: rgb(2, 19, 48);
     }
   }

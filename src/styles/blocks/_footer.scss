@@ -12,4 +12,33 @@
   &__request {
     max-width: 400px;
   }
+
+  &__tuned {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  &__subscription {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100%;
+    justify-content: space-between;
+  }
+
+  &__email {
+    color: white;
+    transition: color .3s ease-in;
+    display: block;
+    @include make-ff-nova(16px);
+
+    &:hover {
+      transition: color .05s ease-in;
+      color: $color-contrast;
+    }
+
+    &:active {
+      transition: color .05s ease-in;
+      color: $color-light;
+    }
+  }
 }

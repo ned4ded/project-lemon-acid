@@ -1,7 +1,8 @@
 .nav {
-  background-color: $color-contrast;
-  border: solid 1px #4d59a1;
-  box-shadow: 0 0 20px 15px rgba(94, 166, 251, 0.1), 0 0 15px 10px rgba(94, 166, 251, 0.1), 0 0 10px 5px rgba(94, 166, 251, 0.2);
+  background-color: rgb(46, 71, 116);
+  border: solid 1px darken($color-dark, 5%);
+  box-shadow: 0 0 20px 15px rgba($color-dark, 0.1), 0 0 15px 10px rgba($color-dark, 0.1), 0 0 10px 5px rgba($color-dark, 0.2);
+  // box-shadow: 0 0 20px 15px rgba($color-dark, 0.2);
 
   &__content {
     display: inline-flex;
@@ -54,7 +55,7 @@
 
     &:active {
       transition: color .05s ease-in, text-shadow .05s ease-in;
-      color: $color-light;
+      color: $color-contrast;
     }
   }
 }

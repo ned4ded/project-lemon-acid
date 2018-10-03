@@ -1,22 +1,22 @@
 [
   {
     "name" : "About",
-    "ref" : "#about-section"
+    "ref" : "#section-about"
   },
   {
     "name" : "Features",
-    "ref" : "#features-section"
+    "ref" : "#section-features"
   },
   {
     "name" : "IDO",
-    "ref" : "#ido-section"
+    "ref" : "#section-ido"
   },
   {
     "name" : "Witness",
-    "ref" : "#witness-section"
+    "ref" : "#section-witness"
   },
   {
     "name" : "Contact",
-    "ref" : "#contact-section"
+    "ref" : "#section-contact"
   }
 ]

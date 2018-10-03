@@ -23,7 +23,7 @@
     &-name {
       color: #e0e0e0;
 
-      @include make-ff-nova(18px);
+      @include make-ff-nova(18px, 500);
       margin: 0 0 5px;
     }
 

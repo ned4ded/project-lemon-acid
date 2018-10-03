@@ -8,8 +8,8 @@
   "logotype-download" : {
     "ref" : "assets/imgs/logo-array-text.png",
     "alt" : "Array.io Logotype",
-    "width" : 97,
-    "height" : 14
+    "width" : 148,
+    "height" : 21
   },
   "lightpaper" : {
     "ref" : "assets/lightpaper.pdf",

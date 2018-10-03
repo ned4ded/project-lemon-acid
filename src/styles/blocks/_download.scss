@@ -34,19 +34,19 @@
     &:before {
       display: block;
       content: '';
-      width: 105px;
+      width: 155px;
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
-      height: 16px;
-      filter: blur(8px);
-      background-color: rgba($color-contrast, .4);
+      height: 26px;
+      filter: blur(10px);
+      background-color: rgba(94, 166, 251, 0.35);
       position: absolute;
     }
   }
 
   &__heading {
-    padding-top: 30px;
+    padding-top: 35px;
     padding-bottom: 30px;
   }
 
