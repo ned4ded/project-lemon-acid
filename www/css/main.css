@@ -734,6 +734,7 @@ body {
 
 .cube {
   position: relative;
+  z-index: 0;
   background-image: url("../assets/imgs/logo-array-dots-middle.png");
   background-position: 50% 57%;
   background-repeat: no-repeat; }
