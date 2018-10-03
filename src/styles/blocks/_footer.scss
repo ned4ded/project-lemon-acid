@@ -16,6 +16,10 @@
   &__tuned {
     display: flex;
     flex-flow: column nowrap;
+
+    @include respond-to(sm) {
+      margin-top: 60px;
+    }
   }
 
   &__subscription {

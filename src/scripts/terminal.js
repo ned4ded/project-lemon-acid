@@ -276,19 +276,51 @@ document.addEventListener('DOMContentLoaded', (() => {
     }
   }
 
+  const screen = {
+    smallerThan(string) {
+      const compare = (px) => {
+        return window.innerWidth < px;
+      }
+
+      switch (string) {
+        case 'xs':
+          return compare(575.98);
+        case 'sm':
+          return compare(767.98);
+        case 'md':
+          return compare(991.98);
+        case 'lg':
+          return compare(1199.98);
+        default:
+          throw new Error('Screen: wrong input');
+      }
+
+      return;
+    }
+  }
+
   const links = Array.from( document.querySelectorAll('[data-smooth-scroll]') )
     .forEach(e => new SmoothScroll(e));
 
-  const cubeEl = document.querySelector('[data-animation-process-name="cube"]');
-  const cube = new Animation(cubeEl, 'open');
-
   const slogan = document.querySelector('.jumbotron__slogan');
+  
+  if(!screen.smallerThan('sm')) {
+    return (() => {
+      const cubeEl = document.querySelector('[data-animation-process-name="cube"]');
+      const cube = new Animation(cubeEl, 'open');
 
-  setTimeout(() => {
-    cube.close(() => {
-      slogan.classList.remove('jumbotron__slogan--hidden')
-    });
-  }, 3000);
+
+      setTimeout(() => {
+        cube.close(() => {
+          slogan.classList.remove('jumbotron__slogan--hidden')
+        });
+      }, 3000);
+    })()
+  } else {
+    slogan.classList.remove('jumbotron__slogan--hidden');
+  };
+
+
 
   const instruction = document.getElementById('instruction-steps');
   const prev = document.getElementById('instruction-steps-prev');
@@ -346,22 +378,25 @@ document.addEventListener('DOMContentLoaded', (() => {
     toggler.addEventListener('click', listener);
   });
 
-  const icons = Array.from( document.querySelectorAll('[data-levitate]') ).reduce((acc, cur) => {
-    setTimeout(() => {
-      anime({
-        targets: cur,
-        top: ['10px', '-10px'],
-        loop: true,
-        direction: 'alternate',
-        easing: 'easeInOutCubic',
-        duration: 1000,
-        delay: 0
-      });
+  if(!screen.smallerThan('sm')) {
+    const icons = Array.from( document.querySelectorAll('[data-levitate]') ).reduce((acc, cur) => {
+      setTimeout(() => {
+        anime({
+          targets: cur,
+          top: ['10px', '-10px'],
+          loop: true,
+          direction: 'alternate',
+          easing: 'easeInOutCubic',
+          duration: 1000,
+          delay: 0
+        });
 
-      return;
-    }, acc);
+        return;
+      }, acc);
 
-    return acc + 200;
-  }, 0);
+      return acc + 200;
+    }, 0);
+  }
+
 
 }), false);

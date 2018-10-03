@@ -8,7 +8,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Array.io</title>
   <meta name="description" content="Array.io - description">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap-grid.css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css">
@@ -20,9 +20,12 @@
   <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
-  
+  <div class="wrapper">
+    
+    
 
-<div class="container-fluid nav">
+    
+<div class="container-fluid nav nav--border--bottom">
   <div class="row">
     <div class="col-12">
       <nav class="container">
@@ -59,7 +62,7 @@
 </div>
 
 
-  
+    
   
 
 <div class="container section jumbotron">
@@ -67,7 +70,7 @@
     <div class="col-12 jumbotron__content">
       
 
-      <div data-animation-process-name="cube" data-animation-process="open" class="jumbotron__cube cube">
+      <div data-animation-process-name="cube" data-animation-process="closed" class="jumbotron__cube cube">
         <span class="cube__part cube__part--top"></span>
         <img class="jumbotron__logotype cube__logotype" src="assets/imgs/logo-array-dots.png" alt="Array.io Logotype" width="251" height="279">
         <span class="cube__part cube__part--bottom"></span>
@@ -197,22 +200,21 @@
 
                 <p class="features__paragraph">The Array Platform allows developers to easily create DApps using a set of tools, which includes a software development kit (SDK), IDE plugins, Array.IO Node all-in-one installation tool and the extensive documentation with tutorials and guidelines. Our SDK consists of a smart contract compiler and debugger, as well as a set of APIs for cross-chain connectivity and IPFS interaction. IDE plugins offer easy-to-use environment for DApp creation and deployment, while the Array.IO Node installation tool enables you to instantly connect to our blockchain.
 Our client application has a user-friendly interface which gives access to the DApp marketplace and runs the installed DApps in an isolated environment. It has several components built in: local storage, IPFS, keychain, OrbitDB, logger, and many more. These features are easily incorporated with the tools provided in the client SDK, which makes DApp development accessible for anyone.</p>
-                </div>
+              </div>
 
-                <div class="features__video">
-                  <div class="browser">
-                    <figure class="browser__heading">
-                      <span class="browser__heading-text">Array.IO DApp environment</span>
-                    </figure>
+              <div class="features__video">
+                <div class="browser">
+                  <figure class="browser__heading">
+                    <span class="browser__heading-text">Array.IO DApp environment</span>
+                  </figure>
 
-                    <figure class="browser__site">
-                      <div class="browser__body">
-                        <div class="browser__form">
-                          <iframe id="video-player" class="browser__player" width="640" height="360" allowfullscreen src="https://www.youtube.com/embed/NkzKD8c-Sdo?enablejsapi=1&color=white&modestbranding=1&rel=0&controls=1" frameborder="0"></iframe>
-                        </div>
+                  <figure class="browser__site">
+                    <div class="browser__body">
+                      <div class="browser__form">
+                        <iframe id="video-player" class="browser__player" width="640" height="360" allowfullscreen src="https://www.youtube.com/embed/NkzKD8c-Sdo?enablejsapi=1&color=white&modestbranding=1&rel=0&controls=1" frameborder="0"></iframe>
                       </div>
-                    </figure>
-                  </div>
+                    </div>
+                  </figure>
                 </div>
               </div>
             </div>
@@ -270,10 +272,10 @@ Our client application has a user-friendly interface which gives access to the D
         <a data-modal-toggler="instruction-modal" href="#" class="ido__btn"><span class="ido__btn-text">learn how</span></a>
       </div>
 
-      <div id="instruction-modal" class="instruction__guideline">
+      <div data-modal-state="closed" id="instruction-modal" class="instruction__guideline">
         <button id="instruction-steps-prev" type="button" class="instruction__btn instruction__btn--left">previous step</button>
 
-        <div id="instruction-steps" class="swiper-container">
+        <div id="instruction-steps" class="swiper-container instruction__swiper">
 
           <ul class="swiper-wrapper instruction__steps">
             <li class="swiper-slide">
@@ -476,7 +478,7 @@ Array.IO keychain brings together different implementations of the Elliptic Curv
 
 
 
-  
+    
 
 
 <div id="section-contact" class="container-fluid footer section">
@@ -550,8 +552,7 @@ Array.IO keychain brings together different implementations of the Elliptic Curv
 </div>
 
 
-  
-
+    
 <div class="container-fluid nav">
   <div class="row">
     <div class="col-12">
@@ -589,7 +590,9 @@ Array.IO keychain brings together different implementations of the Elliptic Curv
 </div>
 
 
-  <div id="lining" class="lining"></div>
+    <div data-modal-state="closed" id="lining" class="lining"></div>
+  </div>
+
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>

@@ -4,8 +4,11 @@
 
 body {
   min-height: 100vh;
+  min-width: 515px;
   margin: 0;
+}
 
+.wrapper {
   background-image: url('../assets/imgs/body-bg-1.png'), url('../assets/imgs/body-bg-1.png'), linear-gradient(86deg, #203d60, #101f40);
   background-repeat: no-repeat, no-repeat,repeat;
   background-size: 1366px 752px, 1366px 752px,auto;
@@ -150,6 +153,18 @@ body {
   opacity: 0;
   transition: opacity .5s ease-in;
   cursor: pointer;
+
+  @include respond-to(sm) {
+    z-index: 15;
+    width: 48px;
+    height: 48px;
+    top: 24px;
+    left: calc(100% - 24px - 24px);
+    background-color: transparent;
+    background-image: url('../assets/imgs/icon-cross.svg');
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
 
   &[data-modal-state="opening"] {
     display: block;

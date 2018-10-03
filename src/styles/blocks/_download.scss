@@ -12,6 +12,10 @@
   box-shadow: 0 0 5px -1px rgba(94, 166, 251, 0.3);
   border-radius: 8px;
 
+  @include respond-to(sm) {
+    background-color: rgb(20, 39, 73);
+  }
+
   &__item {
     padding: 15px;
 

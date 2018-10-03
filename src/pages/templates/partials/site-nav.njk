@@ -1,6 +1,5 @@
-{% set links = datasets.get('site-map') %}
-
-<div class="container-fluid nav">
+{% macro make(links, mods) %}
+<div class="container-fluid nav{{ ' ' + mods if mods }}">
   <div class="row">
     <div class="col-12">
       <nav class="container">
@@ -19,3 +18,4 @@
     </div>
   </div>
 </div>
+{% endmacro %}

@@ -2,6 +2,10 @@
 
   & .section__content {
     padding-top: 200px;
+
+    @include respond-to(sm) {
+      padding-top: 50px;
+    }
   }
 
   &__content {
@@ -9,6 +13,10 @@
     align-items: center;
     flex-flow: row nowrap;
     justify-content: center;
+
+    @include respond-to(sm) {
+      flex-flow: column nowrap;
+    }
   }
 
   &__logotype {
@@ -17,6 +25,10 @@
     @include respond-to(md) {
       margin: 0px 50px;
     }
+
+    @include respond-to(sm) {
+      margin: 0;
+    }
   }
 
   &__download {
@@ -24,6 +36,10 @@
 
     @include respond-to(md) {
       margin: 0px 50px;
+    }
+
+    @include respond-to(sm) {
+      margin: 75px 0 0;
     }
   }
 
@@ -39,6 +55,10 @@
     opacity: 1;
 
     transition: opacity .5s ease-in;
+
+    @include respond-to(sm) {
+      margin-top: 75px;
+    }
 
     &--hidden {
       opacity: 0;

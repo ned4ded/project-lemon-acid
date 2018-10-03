@@ -92,6 +92,11 @@
       &--sides {
         margin-right: 60px;
         margin-left: 60px;
+
+        @include respond-to(md) {
+          margin-right: 0;
+          margin-left: 0;
+        }
       }
     }
   }

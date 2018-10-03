@@ -10,10 +10,10 @@
         <a data-modal-toggler="instruction-modal" href="#" class="ido__btn"><span class="ido__btn-text">learn how</span></a>
       </div>
 
-      <div id="instruction-modal" class="instruction__guideline">
+      <div data-modal-state="closed" id="instruction-modal" class="instruction__guideline">
         <button id="instruction-steps-prev" type="button" class="instruction__btn instruction__btn--left">previous step</button>
 
-        <div id="instruction-steps" class="swiper-container">
+        <div id="instruction-steps" class="swiper-container instruction__swiper">
 
           <ul class="swiper-wrapper instruction__steps">
             <li class="swiper-slide">

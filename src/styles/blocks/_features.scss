@@ -8,6 +8,11 @@
 
     margin-bottom: 25px;
     width: 100%;
+
+    @include respond-to(sm) {
+      display: flex;
+      flex-flow: row wrap;
+    }
   }
 
   &__link {
@@ -41,6 +46,10 @@
       border-color: rgba($color-dark, .9);
       text-shadow: 0px 0px 3px rgba(255, 255, 255, .15);
     }
+
+    @include respond-to(sm) {
+      white-space: nowrap;
+    }
   }
 
   &__item {
@@ -61,8 +70,14 @@
       align-items: center;
     }
 
-    &--client {
+    @include respond-to(sm) {
+      flex-flow: column nowrap;
+    }
 
+    &--client {
+      @include respond-to(md) {
+        flex-flow: column nowrap;
+      }
     }
 
     &:last-child {
@@ -84,12 +99,21 @@
       &--left {
         margin-right: 35px;
         padding-left: 250px;
+
+        @include respond-to(sm) {
+          order: 1;
+        }
       }
     }
 
     @include respond-to(lg) {
       padding-left: 0;
       padding-right: 0;
+    }
+
+    @include respond-to(sm) {
+      margin-right: 0;
+      margin-left: 0;
     }
   }
 
@@ -104,6 +128,11 @@
     @include respond-to(lg) {
       width: 50%;
     }
+
+    @include respond-to(md) {
+      margin: 40px 0 0;
+      width: 100%;
+    }
   }
 
   &__heading {
@@ -116,6 +145,10 @@
     &--align {
       &--right {
         text-align: right;
+
+        @include respond-to(sm) {
+          text-align: left;
+        }
       }
     }
   }
@@ -151,6 +184,10 @@
     border-radius: 4px;
     overflow: hidden;
     box-shadow: 0 0 5px -1px rgba(94, 166, 251, 0.3), inset 0 0 5px -1px rgba(94, 166, 251, 0.3);
+
+    @include respond-to(sm) {
+      margin-bottom: 25px;
+    }
 
     &:before {
       position: absolute;
