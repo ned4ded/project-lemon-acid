@@ -12,10 +12,9 @@
 
   margin: 0 auto;
 
-
-  // @media (min-width: 1800px) {
-  //   width: 640px;
-  // }
+  @include respond-to(sm) {
+    width: 455px;
+  }
 
   &__heading {
     display: flex;

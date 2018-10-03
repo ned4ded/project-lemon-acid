@@ -566,6 +566,9 @@ body {
           box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
   overflow: hidden;
   margin: 0 auto; }
+  @media (max-width: 767.98px) {
+    .browser {
+      width: 455px; } }
   .browser__heading {
     display: -webkit-box;
     display: -ms-flexbox;

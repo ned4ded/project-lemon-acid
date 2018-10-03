@@ -95,7 +95,7 @@
         <li class="download__item">
           
 
-          <a href="assets/lightpaper.pdf" class="link link--glass download__lightpaper"><span class="link__icon link__icon--download"></span><span class="link__name">Litepaper</span></a>
+          <a href="assets/litepaper.pdf" class="link link--glass download__litepaper"><span class="link__icon link__icon--download"></span><span class="link__name">Litepaper</span></a>
         </li>
         <li class="download__item">
           
@@ -211,7 +211,13 @@ Our client application has a user-friendly interface which gives access to the D
                   <figure class="browser__site">
                     <div class="browser__body">
                       <div class="browser__form">
-                        <iframe id="video-player" class="browser__player" width="640" height="360" allowfullscreen src="https://www.youtube.com/embed/2UN0cyo958Q?enablejsapi=1&color=white&modestbranding=1&rel=0&controls=1" frameborder="0"></iframe>
+                        
+
+                        <video class="browser__player" width="640" height="360" allowfullscreen controls="controls" poster="video/duel.jpg">
+                         <source src="assets/client-video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                         Video tag doesn't support by your browser
+                         <a href="assets/client-video.mp4">Download video</a>.
+                        </video>
                       </div>
                     </div>
                   </figure>

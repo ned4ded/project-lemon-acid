@@ -376,25 +376,25 @@ document.addEventListener('DOMContentLoaded', (() => {
   //   toggler.addEventListener('click', listener);
   // });
 
-  if(!screen.smallerThan('sm')) {
-    const icons = Array.from( document.querySelectorAll('[data-levitate]') ).reduce((acc, cur) => {
-      setTimeout(() => {
-        anime({
-          targets: cur,
-          top: ['10px', '-10px'],
-          loop: true,
-          direction: 'alternate',
-          easing: 'easeInOutCubic',
-          duration: 1000,
-          delay: 0
-        });
-
-        return;
-      }, acc);
-
-      return acc + 200;
-    }, 0);
-  }
+  // if(!screen.smallerThan('sm')) {
+  //   const icons = Array.from( document.querySelectorAll('[data-levitate]') ).reduce((acc, cur) => {
+  //     setTimeout(() => {
+  //       anime({
+  //         targets: cur,
+  //         top: ['10px', '-10px'],
+  //         loop: true,
+  //         direction: 'alternate',
+  //         easing: 'easeInOutCubic',
+  //         duration: 1000,
+  //         delay: 0
+  //       });
+  //
+  //       return;
+  //     }, acc);
+  //
+  //     return acc + 200;
+  //   }, 0);
+  // }
 
 
 }), false);
