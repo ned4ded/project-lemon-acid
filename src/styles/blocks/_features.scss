@@ -57,6 +57,10 @@
       }
     }
 
+    &--client {
+      
+    }
+
     &:last-child {
       padding-bottom: 0;
       margin-bottom: 0;
@@ -64,17 +68,24 @@
   }
 
   &__caption {
-    margin: 0px 35px;
+    margin: 0px;
     max-width: 800px;
 
     &--p {
       &--right {
+        margin-left: 35px;
         padding-right: 250px;
       }
 
       &--left {
+        margin-right: 35px;
         padding-left: 250px;
       }
+    }
+
+    @include respond-to(lg) {
+      padding-left: 0;
+      padding-right: 0;
     }
   }
 
@@ -84,6 +95,10 @@
 
     @media (min-width: 1800px) {
       width: 40%;
+    }
+
+    @include respond-to(lg) {
+      width: 50%;
     }
   }
 

@@ -102,6 +102,17 @@
       &--center {
         text-align: center;
       }
+
+      &--justified {
+        text-align: justify;
+      }
+    }
+
+    &--mg {
+      &--sides {
+        margin-right: 60px;
+        margin-left: 60px;
+      }
     }
   }
 

@@ -41,7 +41,7 @@
     &-wrapper {
       overflow: hidden;
       height: 100%;
-      padding: 20px 30px;
+      padding: 0 30px;
     }
 
     &[data-visible="true"] {
@@ -72,14 +72,6 @@
     color: #e0e0e0;
     margin: 20px 0;
 
-    &:first-child {
-      margin-top: 0;
-    }
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-
     @include make-ff-nova(18px);
 
     &[data-visible="false"] {
@@ -89,6 +81,17 @@
     &--align {
       &--center {
         text-align: center;
+      }
+
+      &--justified {
+        text-align: justify;
+      }
+    }
+
+    &--mg {
+      &--sides {
+        margin-right: 60px;
+        margin-left: 60px;
       }
     }
   }

@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', (() => {
       anime({
         targets: el,
         opacity: [0, 1],
-        height: [0, 350],
+        height: [0, el.firstElementChild.scrollHeight],
         duration: 500,
         easing: 'linear',
         complete: function(anim) {
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', (() => {
         opacity: [1, 0],
         duration: 500,
         easing: 'linear',
-        height: (toggler.getAttribute('id') == 'ido-more') ? [350, 0] : null,
+        height: (toggler.getAttribute('id') == 'ido-more') ? [toggler.firstElementChild.scrollHeight, 0] : null,
         complete: function(anim) {
           toggler.dataset.visible = false;
 
@@ -282,8 +282,12 @@ document.addEventListener('DOMContentLoaded', (() => {
   const cubeEl = document.querySelector('[data-animation-process-name="cube"]');
   const cube = new Animation(cubeEl, 'open');
 
+  const slogan = document.querySelector('.jumbotron__slogan');
+
   setTimeout(() => {
-    cube.close();
+    cube.close(() => {
+      slogan.classList.remove('jumbotron__slogan--hidden')
+    });
   }, 3000);
 
   const instruction = document.getElementById('instruction-steps');

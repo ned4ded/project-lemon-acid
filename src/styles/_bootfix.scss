@@ -1,5 +1,5 @@
 .container {
-  @include respond-to(xl) {
+  @media (min-width: 1200px) {
     max-width: 1080px;
     // max-width: 925px;
   }
