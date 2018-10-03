@@ -1422,6 +1422,7 @@ body {
     -webkit-box-shadow: 0px 0px 5px 6px rgba(94, 166, 251, 0.4);
             box-shadow: 0px 0px 5px 6px rgba(94, 166, 251, 0.4);
     position: relative;
+    text-align: justify;
     cursor: pointer; }
     .ido__more-wrapper {
       overflow: hidden;
