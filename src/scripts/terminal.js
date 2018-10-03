@@ -303,9 +303,9 @@ document.addEventListener('DOMContentLoaded', (() => {
     .forEach(e => new SmoothScroll(e));
 
   const slogan = document.querySelector('.jumbotron__slogan');
-  
+
   if(!screen.smallerThan('sm')) {
-    return (() => {
+    (() => {
       const cubeEl = document.querySelector('[data-animation-process-name="cube"]');
       const cube = new Animation(cubeEl, 'open');
 
@@ -319,8 +319,6 @@ document.addEventListener('DOMContentLoaded', (() => {
   } else {
     slogan.classList.remove('jumbotron__slogan--hidden');
   };
-
-
 
   const instruction = document.getElementById('instruction-steps');
   const prev = document.getElementById('instruction-steps-prev');
