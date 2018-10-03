@@ -1,11 +1,7 @@
 .jumbotron {
 
   & .section__content {
-    padding-top: 200px;
-
-    @include respond-to(lg) {
-      padding-top: 150px;
-    }
+    padding-top: 150px;
 
     @include respond-to(sm) {
       padding-top: 50px;
@@ -48,7 +44,7 @@
   }
 
   &__slogan {
-    margin-top: 100px;
+    margin-top: 75px;
     letter-spacing: -1.8px;
     color: white;
     line-height: 1.3;
@@ -59,10 +55,6 @@
     opacity: 1;
 
     transition: opacity .5s ease-in;
-
-    @include respond-to(lg) {
-      margin-top: 75px;
-    }
 
     &--hidden {
       opacity: 0;
