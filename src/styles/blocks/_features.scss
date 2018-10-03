@@ -57,8 +57,12 @@
       }
     }
 
+    @include respond-to(md) {
+      align-items: center;
+    }
+
     &--client {
-      
+
     }
 
     &:last-child {

@@ -1070,7 +1070,6 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    min-width: 685px;
     margin: 0;
     padding: 0;
     list-style: none; }
@@ -1084,7 +1083,7 @@ body {
     font-size: 18px;
     font-weight: 400;
     font-style: normal;
-    width: 630px;
+    max-width: 630px;
     text-align: justify; }
   .about__item {
     display: -webkit-box;
@@ -1186,6 +1185,11 @@ body {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; }
+    @media (max-width: 991.98px) {
+      .features__item {
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; } }
     .features__item:last-child {
       padding-bottom: 0;
       margin-bottom: 0; }
