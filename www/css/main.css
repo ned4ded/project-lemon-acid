@@ -1930,6 +1930,8 @@ body {
     background-size: 54px auto; }
   .pros__item--server {
     background-image: url("../assets/imgs/icon-pros-server.png"); }
+  .pros__item--cube {
+    background-image: url("../assets/imgs/icon-pros-cube.png"); }
   @media (max-width: 991.98px) {
     .pros__item {
       width: 100%; } }

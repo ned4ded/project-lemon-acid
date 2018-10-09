@@ -39,6 +39,10 @@
       background-image: url('../assets/imgs/icon-pros-server.png');
     }
 
+    &--cube {
+      background-image: url('../assets/imgs/icon-pros-cube.png');
+    }
+
     @include respond-to(md) {
       width: 100%;
     }
