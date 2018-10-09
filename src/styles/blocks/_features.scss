@@ -57,7 +57,7 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     margin-bottom: -75px;
 
     &--align {
@@ -67,14 +67,21 @@
     }
 
     @include respond-to(md) {
-      align-items: center;
+      align-items: flex-start;
     }
 
     @include respond-to(sm) {
+      align-items: center;
       flex-flow: column nowrap;
     }
 
     &--client {
+      align-items: flex-start;
+
+      @include respond-to(lg) {
+        align-items: center;
+      }
+
       @include respond-to(md) {
         flex-flow: column nowrap;
       }
@@ -93,12 +100,12 @@
     &--p {
       &--right {
         margin-left: 35px;
-        padding-right: 250px;
+        padding-right: 285px;
       }
 
       &--left {
         margin-right: 35px;
-        padding-left: 250px;
+        padding-left: 285px;
 
         @include respond-to(sm) {
           order: 1;
@@ -119,13 +126,14 @@
 
   &__video {
     width: 60%;
-    margin: 0 0 0 40px;
+    margin: 60px 0 0 40px;
 
     @media (min-width: 1800px) {
       width: 40%;
     }
 
     @include respond-to(lg) {
+      margin-top: 30px;
       width: 50%;
     }
 
@@ -136,7 +144,7 @@
   }
 
   &__heading {
-    margin-top: 10px;
+    margin-top: 0;
     margin-bottom: 25px;
     color: white;
 
@@ -185,8 +193,13 @@
     overflow: hidden;
     box-shadow: 0 0 5px -1px rgba(94, 166, 251, 0.3), inset 0 0 5px -1px rgba(94, 166, 251, 0.3);
 
+    @include respond-to(md) {
+      margin-top: 60px;
+    }
+
     @include respond-to(sm) {
       margin-bottom: 25px;
+      margin-top: 0;
     }
 
     &:before {
