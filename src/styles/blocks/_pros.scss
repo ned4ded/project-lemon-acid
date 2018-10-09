@@ -17,9 +17,31 @@
   }
 
   &__item {
-    width: 48%;
+    width: 46%;
     margin: 30px 0;
     text-align: left;
+    padding-left: 80px;
+    background-size: 60px auto;
+    background-position: left top;
+    background-repeat: no-repeat;
+    text-align: justify;
+
+    &--cross {
+      background-image: url('../assets/imgs/icon-pros-cross.png');
+    }
+
+    &--key {
+      background-image: url('../assets/imgs/icon-pros-key.png');
+      background-size: 54px auto;
+    }
+
+    &--server {
+      background-image: url('../assets/imgs/icon-pros-server.png');
+    }
+
+    @include respond-to(md) {
+      width: 100%;
+    }
 
     &-name {
       color: #e0e0e0;

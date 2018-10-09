@@ -5,8 +5,12 @@
   <div class="row">
     <div class="col-12">
       <div class="container">
-        <footer class="row section__content">
-          <div class="col-12 col-md-5">
+        <footer class="row section__content justify-content-between">
+          {# <div class="col-12 col-md-4 footer__logotype">
+            <img src="assets/imgs/logo-array-250.png" alt="Array Logotype" width="160" height="167">
+          </div> #}
+
+          <div class="col-12 col-md-6 footer__contacts">
             {% set socials = datasets.get('socials') %}
 
             <h2 class="footer__heading">
@@ -23,7 +27,7 @@
 
           </div>
 
-          <div class="col-12 col-md-7 footer__tuned">
+          <div class="col-12 col-md-6 footer__tuned">
             <h2 class="footer__heading">
               Stay tuned
             </h2>
