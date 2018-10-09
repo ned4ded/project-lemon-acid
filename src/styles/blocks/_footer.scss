@@ -2,12 +2,8 @@
   background-color: $color-dark;
   border-top: 1px solid rgba(white, .25);
   background-image: url('../assets/imgs/body-bg-4.png');
-  background-position: -460px 100%;
+  background-position: calc(50% - 700px) 100%;
   background-repeat: no-repeat;
-
-  @include respond-to(lg) {
-    background-position: -800px 100%;
-  }
 
   @include respond-to(sm) {
     background-image: none;

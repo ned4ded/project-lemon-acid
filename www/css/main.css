@@ -277,11 +277,8 @@ body {
   background-color: #021635;
   border-top: 1px solid rgba(255, 255, 255, 0.25);
   background-image: url("../assets/imgs/body-bg-4.png");
-  background-position: -460px 100%;
+  background-position: calc(50% - 700px) 100%;
   background-repeat: no-repeat; }
-  @media (max-width: 1199.98px) {
-    .footer {
-      background-position: -800px 100%; } }
   @media (max-width: 767.98px) {
     .footer {
       background-image: none; } }
