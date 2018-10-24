@@ -69,7 +69,7 @@
 
     @include bp-up('xl') {
       width: auto;
-      flex-direction: row;      
+      flex-direction: row;
     }
 
     & li {
@@ -129,8 +129,15 @@
   }
 
   &__terms {
-    display: block;
+    display: inline-flex;
     margin-bottom: 2rem;
+
+    span {
+      &:not(:first-child) {
+        margin-left: 20px;
+        list-style: circle;
+      }
+    }
   }
 
   &__features {
