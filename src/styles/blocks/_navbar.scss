@@ -1,0 +1,73 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  flex-flow: row nowrap;
+  justify-content: center;
+
+  min-height: 60px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  font-size: $font-size-sm;
+
+  background-color: $navbar-bg;
+  line-height: 1;
+
+  &__nav {
+    display: inline-flex;
+    align-items: center;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    li {
+      margin: 0px 5px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  & a {
+    color: $navbar-color;
+    padding: 0px 5px;
+
+    &:hover {
+      color: $navbar-color-hover;
+    }
+  }
+
+  &--footer {
+    background-color: $footer-bg;
+    font-size: $font-size-base;
+
+    & a {
+      color: $body-bg;
+      padding: 0px 5px;
+
+      &:hover {
+        color: lighten($body-bg, 10%);
+      }
+
+      &:active {
+        color: lighten($body-bg, 15%);
+      }
+    }
+  }
+
+  .wrapper {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 860px;
+
+    @include bp-up('xl') {
+      justify-content: space-between;
+    }
+  }
+}

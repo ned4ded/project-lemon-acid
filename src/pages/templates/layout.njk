@@ -1,4 +1,4 @@
-{% set m = datasets.get('meta') %}
+{% set meta = datasets.get('meta') %}
 
 <!doctype html>
 <html class="no-js" lang="{{ meta.lang }}">
@@ -18,7 +18,11 @@
   <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
+  {% include "partials/navbar.njk" %}
+
   {% block content %} {% endblock %}
+
+  {% include "partials/footer.njk" %}
 
   <script src="js/bundle.js" charset="utf-8"></script>
 

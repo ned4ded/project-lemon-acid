@@ -1,0 +1,60 @@
+.section {
+  position: relative;
+  overflow: hidden;
+
+  &--hero {
+    background-image: radial-gradient(ellipse closest-side at 50% 50%, lighten($body-bg, 10%), lighten($body-bg, 5%) 25%, $body-bg);
+    background-repeat: no-repeat;
+    background-position: center -220px;
+    background-size: 100% 1000px;
+  }
+
+  &--core {
+    background-repeat: no-repeat;
+    background-image: url(../assets/imgs/bg-1.svg);
+    background-position: calc(50% + 1000px) center;
+
+    .wrapper {
+      @include bp-up('xl') {
+        padding-left: 470px;
+      }
+    }
+  }
+
+  &--vm {
+    background-repeat: no-repeat;
+    background-image: url(../assets/imgs/bg-2.svg);
+    background-position: calc(50% - 600px) center;
+
+    .wrapper {
+      @include bp-up('xl') {
+        padding-right: 470px;
+      }
+    }
+  }
+
+  &--keychain {
+    background-repeat: no-repeat;
+    background-image: url(../assets/imgs/bg-3.svg);
+    background-position: calc(50% + 600px) center;
+
+    .wrapper {
+      @include bp-up('xl') {
+        padding-left: 470px;
+      }
+    }
+  }
+
+  &--contact {
+    background-color: darken($body-bg, 10%);
+    border-top: 1px solid black;
+
+    td:first-child {
+      padding-right: 2em;
+    }
+  }
+
+  &--ido {
+    background-color: darken($body-bg, 10%);
+  }
+}
