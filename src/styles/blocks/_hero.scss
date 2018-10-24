@@ -53,7 +53,7 @@
     align-items: center;
     flex-flow: column nowrap;
 
-    @media (min-width: 1201px) and (max-height: 1000px) {
+    @media (min-width: 1200px) and (max-height: 1000px) {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
@@ -78,7 +78,8 @@
       flex-direction: row;
     }
 
-    @media (min-width: 1201px) and (max-height: 1000px) {
+    @media (min-width: 1200px) and (max-height: 1000px) {
+      width: 250px;
       margin-top: 0;
       margin-left: 50px;
       flex-direction: column;
@@ -108,7 +109,7 @@
         border-left: 1px solid $border-color;
       }
 
-      @media (min-width: 1201px) and (max-height: 1000px) {
+      @media (min-width: 1200px) and (max-height: 1000px) {
         border-left: 0;
         border-top: 1px solid $border-color;
       }
