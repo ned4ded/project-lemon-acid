@@ -80,11 +80,16 @@
   &__player {
     display: block;
 
-    width: 475px;
-    height: 350px;
+    width: 100%;
+    height: 230px;
     margin: 0 auto;
 
     border: none;
+
+    @include bp-up(sm) {
+      width: 475px;
+      height: 350px;
+    }
   }
 
   &__block {
