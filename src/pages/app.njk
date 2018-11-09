@@ -1,5 +1,7 @@
 {% extends "layout.njk" %}
 
+{% set page = 'app' %}
+
 {% block content %}
 <div class="section section--app">
   <div class="container-fluid bg-info">
@@ -14,11 +16,11 @@
       <div class="col-12">
         <div class="app">
           <div class="app__logo">
-            <img src="assets/imgs/array-logo-bg-dark.png" alt="Array Logotype" width="194" height="200">
+            <img src="assets/imgs/array-logo-bg-dark.png" alt="Array Logotype" width="250" height="258">
           </div>
         </div>
-        <h1 class="text-center mt-5 mb-4">The <span class="text-info">Array</span> Platform</h1>
-        <p class="text-center"><a href="#" class="btn btn-primary">Join room #0001</a></p>
+        <h1 class="text-center mb-4">The <span class="text-info">Array</span> Platform</h1>
+        <p class="text-center"><a href="arr://chat/my-room" class="btn btn-primary">Join my-room</a></p>
         <p class="text-center mt-7 text-muted">Don't know where to start? Get a closer look at <a href="index">our platform</a>.</p>
       </div>
     </div>

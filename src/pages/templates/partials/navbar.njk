@@ -1,11 +1,9 @@
-<div id="top" class="navbar container-fluid">
+<div id="top" class="navbar{{ ' navbar--' + page if page }} container-fluid">
   <div class="wrapper">
     {% if page != 'home' %}
-    <div class="navbar__logotype">
-      <a href="index.html"><img src="assets/imgs/array-logo-wordmark.png" width="120" height="21.6" alt=""></a>
-    </div>
+      <a class="navbar__logo" href="index.html"><img src="assets/imgs/array-logo-wordmark.png" width="120" height="21.6" alt=""></a>
     {% endif %}
-    
+
     <ul class="navbar__nav">
       <li>
         <a href="index.html#features">Features</a>

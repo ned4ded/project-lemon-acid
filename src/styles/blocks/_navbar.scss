@@ -59,14 +59,33 @@
   }
 
   &--footer &__logo {
-    display: inline-block;
     filter: invert(100%) opacity(.75);
+  }
+
+  &__logo {
+    width: 100%;
+    display: block;
+
+    margin: 20px 0 40px;
+
+    @include bp-up('md') {
+      width: auto;
+      margin: 0;
+      margin-right: 15px;
+    }
+
+    img {
+      display: block;
+
+      margin: 0 auto;
+    }
   }
 
   .wrapper {
     margin: 0 auto;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     max-width: 860px;
