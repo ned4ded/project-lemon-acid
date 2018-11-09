@@ -1,22 +1,24 @@
 <div id="top" class="navbar container-fluid">
   <div class="wrapper">
+    {% if page != 'home' %}
+    <div class="navbar__logotype">
+      <a href="index.html"><img src="assets/imgs/array-logo-wordmark.png" width="120" height="21.6" alt=""></a>
+    </div>
+    {% endif %}
+    
     <ul class="navbar__nav">
       <li>
-        <a href="#features">Features</a>
+        <a href="index.html#features">Features</a>
       </li>
       <li>
-        <a href="#ido">IDO</a>
+        <a href="index.html#ido">IDO</a>
       </li>
       <li>
-        <a href="#witness">Witness</a>
+        <a href="index.html#witness">Witness</a>
       </li>
       <li>
-        <a href="#contact">Contact</a>
+        <a href="index.html#contact">Contact</a>
       </li>
     </ul>
-
-    {# <div class="navbar__logout">
-      <a href="#">Sign In</a>
-    </div> #}
   </div>
 </div>

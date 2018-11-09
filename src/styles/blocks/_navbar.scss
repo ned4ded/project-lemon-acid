@@ -58,6 +58,11 @@
     }
   }
 
+  &--footer &__logo {
+    display: inline-block;
+    filter: invert(100%) opacity(.75);
+  }
+
   .wrapper {
     margin: 0 auto;
     width: 100%;

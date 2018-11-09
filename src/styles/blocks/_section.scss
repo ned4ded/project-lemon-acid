@@ -57,4 +57,8 @@
   &--ido {
     background-color: darken($body-bg, 10%);
   }
+
+  &--app {
+    min-height: calc(100vh - 120px);
+  }
 }

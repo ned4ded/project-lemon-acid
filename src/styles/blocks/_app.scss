@@ -1,0 +1,19 @@
+.app {
+  width: 100%;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+
+    border: 1px solid darken($footer-bg, 20%);
+    border-radius: 100%;
+    background-color: darken($body-bg, 10%);
+    background-image: radial-gradient(ellipse closest-side at 50% 60%, rgba(lighten($body-bg, 5%), .5) 30%, transparent);
+    box-shadow: 0px 0px 0px 4px darken($body-bg, 15%), 0 1px 10px 8px rgba(159,174,203,.05);
+  }
+}
